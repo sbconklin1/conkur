@@ -41,12 +41,10 @@
   .video .views a { color:var(--accent); text-decoration:none; font-weight:500; }
   .solo { max-width:340px; }
   .swipe { display:none; color:var(--muted); font-size:14px; margin:0 0 10px; }
-  .ways { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
-  .way { background:var(--soft); border-radius:14px; padding:20px; }
-  .way h3 { margin:0 0 4px; font-size:19px; }
-  .way p { margin:0 0 12px; color:var(--muted); font-size:15px; }
-  .way ul { margin:0; padding-left:18px; }
-  .way li { margin:6px 0; }
+  ul.do { margin:0; padding:0; list-style:none; display:grid; grid-template-columns:repeat(3, 1fr); gap:12px; }
+  ul.do li { background:var(--soft); border-radius:12px; padding:16px; }
+  ul.do li b { display:block; margin-bottom:2px; }
+  ul.do li span { color:var(--muted); font-size:14px; }
   .cta { padding:44px 0 56px; text-align:center; }
   .cta h2 { margin-bottom:6px; }
   .cta p { color:var(--muted); margin:0 0 20px; }
@@ -70,8 +68,8 @@
     .videos.row .video { flex:0 0 80%; scroll-snap-align:center; }
     .solo { max-width:80%; }
     .shots figure:last-child { max-width:80%; }
-    .ways { grid-template-columns:1fr; }
-    .way { padding:18px; }
+    ul.do { grid-template-columns:1fr 1fr; gap:10px; }
+    ul.do li { padding:14px; }
     .btns { flex-direction:column; align-items:stretch; }
   }
 </style>
@@ -81,7 +79,7 @@
   <header>
     <div class="brand">Conkur Media</div>
     <h1>Short-form video that brings local businesses real customers.</h1>
-    <p class="lede">I film, edit and post short videos for local businesses, working directly with owners or alongside agencies. Here's what that's done so far.</p>
+    <p class="lede">I film, edit and post short-form videos for local businesses, then turn the views into bookings. Here's what that's done so far.</p>
     <div class="stats">
       <div class="stat"><b>$0 &rarr; ~$1,000/day</b><span>Rancho Calabaza sales, opening week vs. now</span></div>
       <div class="stat"><b>210k+</b><span>views in 60 days for one local farm</span></div>
@@ -106,16 +104,16 @@
     <p class="swipe">Swipe for more videos &rarr;</p>
     <div class="videos row">
       <div class="video">
+        <div class="clip"><iframe src="https://www.instagram.com/reel/DefOCZtyWuB/embed/" title="Rancho Calabaza reel, 20k views" loading="lazy" allowtransparency="true" scrolling="no"></iframe></div>
+        <div class="views"><b>20k views</b><a href="https://www.instagram.com/reel/DefOCZtyWuB/" target="_blank" rel="noopener">Open in Instagram</a></div>
+      </div>
+      <div class="video">
         <div class="clip"><iframe src="https://www.instagram.com/reel/DdxM87aPv7p/embed/" title="Rancho Calabaza reel, 19.5k views" loading="lazy" allowtransparency="true" scrolling="no"></iframe></div>
         <div class="views"><b>19.5k views</b><a href="https://www.instagram.com/reel/DdxM87aPv7p/" target="_blank" rel="noopener">Open in Instagram</a></div>
       </div>
       <div class="video">
         <div class="clip"><iframe src="https://www.instagram.com/reel/Ddy04cdR39X/embed/" title="Rancho Calabaza reel, 2.7k views" loading="lazy" allowtransparency="true" scrolling="no"></iframe></div>
         <div class="views"><b>2.7k views</b><a href="https://www.instagram.com/reel/Ddy04cdR39X/" target="_blank" rel="noopener">Open in Instagram</a></div>
-      </div>
-      <div class="video">
-        <div class="clip"><iframe src="https://www.instagram.com/reel/DeZUYtuRbul/embed/" title="Rancho Calabaza reel, 1.5k views" loading="lazy" allowtransparency="true" scrolling="no"></iframe></div>
-        <div class="views"><b>1.5k views</b><a href="https://www.instagram.com/reel/DeZUYtuRbul/" target="_blank" rel="noopener">Open in Instagram</a></div>
       </div>
     </div>
   </section>
@@ -133,30 +131,16 @@
   </section>
 
   <section>
-    <p class="tag">Work together</p>
-    <h2>Two ways to work with me</h2>
-    <div class="ways">
-      <div class="way">
-        <h3>For business owners</h3>
-        <p>Done for you, every month.</p>
-        <ul>
-          <li>Videos filmed at your business, edited and posted to Instagram, TikTok, Facebook and YouTube</li>
-          <li>Profile makeover: bio, highlights and booking link set up to turn visitors into customers</li>
-          <li>Booking automations, so anyone who comments or DMs gets your booking link instantly</li>
-          <li>A monthly recap of views, engagement and leads in plain numbers</li>
-        </ul>
-      </div>
-      <div class="way">
-        <h3>For agencies and partners</h3>
-        <p>Organic content for your clients, without hiring a video team.</p>
-        <ul>
-          <li>I film on site, edit, and deliver ready-to-post short-form videos</li>
-          <li>Your client stays your client. I can work under your brand or mine.</li>
-          <li>Pairs with paid ads: the organic videos that take off make the best ad creative</li>
-          <li>Web shops: I send my clients who need websites your way</li>
-        </ul>
-      </div>
-    </div>
+    <p class="tag">What's included</p>
+    <h2>Done for you, every month</h2>
+    <ul class="do">
+      <li><b>Filmed on site</b><span>1 to 2 shoots a month at the business, no studio or scripts needed</span></li>
+      <li><b>Edited and posted</b><span>Short-form videos for Instagram, TikTok, Facebook and YouTube</span></li>
+      <li><b>Profile makeover</b><span>Bio, highlights and booking link set up to turn visitors into customers</span></li>
+      <li><b>Booking automations</b><span>Anyone who comments or DMs gets the booking link instantly</span></li>
+      <li><b>Ad-ready content</b><span>The videos that take off organically make the best paid ads</span></li>
+      <li><b>Monthly recap</b><span>Views, engagement and leads in plain numbers</span></li>
+    </ul>
   </section>
 
   <div class="cta">
